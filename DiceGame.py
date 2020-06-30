@@ -12,7 +12,7 @@ for i in range(rounds):
     list[dice] += 1
     
 ratio = max(list) / width
-
+print(' Statistics:')
 for num in range(2,13):
     if num < 10: print(' ', end = '')
     print(num, int(list[num]/ratio) * '=' + '[' + str(list[num]) + ']')
